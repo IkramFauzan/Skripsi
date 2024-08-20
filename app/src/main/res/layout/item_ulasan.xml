@@ -1,0 +1,82 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginTop="4dp"
+    android:layout_marginEnd="8dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginBottom="4dp"
+    card_view:cardCornerRadius="4dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tempat"
+            android:textColor="@color/blue_grotto"
+            android:textStyle="bold"
+            android:textSize="20sp"/>
+
+        <ImageView
+            android:id="@+id/profilUsername"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="8dp"
+            android:layout_below="@id/tempat"
+            android:src="@drawable/baseline_person_pin_24"/>
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Username"
+            android:layout_toRightOf="@+id/profilUsername"
+            android:layout_below="@id/tempat"
+            android:textStyle="bold"
+            android:paddingTop="4dp"
+            android:layout_marginTop="12dp"
+            android:paddingLeft="6dp" />
+
+        <TextView
+            android:id="@+id/ratingTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hasil"
+            android:layout_alignLeft="@id/username"
+            android:layout_marginLeft="8dp"
+            android:layout_below="@id/username"
+            android:paddingTop="10dp"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/komentarTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Review"
+            android:layout_below="@+id/ratingTextView"
+            android:paddingTop="10dp"
+            android:layout_alignLeft="@id/username"
+            android:layout_marginLeft="8dp"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date"
+            android:layout_below="@id/komentarTextView"
+            android:textSize="13sp"
+            android:layout_alignLeft="@id/username"
+            android:layout_marginLeft="8dp"
+            android:paddingTop="10dp"/>
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

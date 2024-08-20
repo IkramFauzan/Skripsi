@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:padding="18dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ajuan Tempat Wisata "
+        android:textStyle="bold"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="14sp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_marginTop="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        tools:listitem="@layout/item_add_destination"
+        android:scrollbars="vertical" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Laporan User"
+        android:layout_marginTop="24dp"
+        android:textStyle="bold"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="14sp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewLaporan"
+        android:layout_marginTop="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        tools:listitem="@layout/item_report"
+        android:scrollbars="vertical" />
+
+    <Button
+        android:id="@+id/deleteButton"
+        android:layout_width="250dp"
+        android:layout_gravity="center"
+        android:text="Delete"
+        android:fontFamily="@font/poppins_medium"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"/>
+</LinearLayout>

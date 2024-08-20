@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@android:color/white">
+
+    <ImageView
+        android:id="@+id/detailGambarImageView"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:visibility="visible"/>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="250dp"
+        android:background="@drawable/bg_half_rounded">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:padding="4dp"
+                android:layout_marginBottom="20dp">
+
+                <TextView
+                    android:id="@+id/detailTempatTextView"
+                    android:layout_width="match_parent"
+                    android:text="Nama Tempat"
+                    android:fontFamily="@font/poppins_medium"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/imagePin"
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:layout_below="@+id/detailTempatTextView"
+                    android:layout_marginTop="8dp"
+                    android:src="@drawable/ic_location" />
+
+                <TextView
+                    android:id="@+id/detailAlamatTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/detailTempatTextView"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Alamat"
+                    android:fontFamily="@font/poppins_regular"
+                    android:layout_toEndOf="@+id/imagePin"
+                    android:textColor="@android:color/black"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/detailDeskripsiTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/detailAlamatTextView"
+                    android:layout_marginTop="10dp"
+                    android:text="Deskripsi"
+                    android:fontFamily="@font/poppins_regular"
+                    android:maxLines="2"
+                    android:ellipsize="end"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tampilkanLebihBanyakButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_marginTop="6dp"
+                    android:text="Tampilkan Lebih Banyak"
+                    android:layout_below="@id/detailDeskripsiTextView"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <View
+                    android:id="@+id/guideline_horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_below="@id/tampilkanLebihBanyakButton"
+                    android:background="#D3CBC8"
+                    android:layout_centerVertical="true" />
+
+                <TextView
+                    android:id="@+id/time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:layout_marginTop="18dp"
+                    android:layout_below="@id/guideline_horizontal"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:text="Waktu Operasional"/>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cV"
+                    app:cardCornerRadius="12dp"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginEnd="4dp"
+                    android:layout_below="@+id/time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/jamOperasional"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="08:00 - 16:00"
+                        android:fontFamily="@font/poppins_regular"
+                        android:maxLines="2"
+                        android:padding="8dp"
+                        android:layout_marginTop="10dp"
+                        />
+
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/showMore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_marginTop="6dp"
+                    android:text="Tampilkan Lebih Banyak"
+                    android:layout_below="@id/cV"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <View
+                    android:id="@+id/guideline_horizontal2"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_below="@id/showMore"
+                    android:background="#D3CBC8"
+                    android:layout_centerVertical="true" />
+
+                <TextView
+                    android:id="@+id/fasilitas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:layout_marginTop="18dp"
+                    android:layout_below="@id/guideline_horizontal2"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:text="Fasilitas"/>
+
+                <TextView
+                    android:id="@+id/listFasilitas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="Toilet"
+                    android:maxLines="2"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/fasilitas"/>
+
+                <TextView
+                    android:id="@+id/showMore2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_marginTop="6dp"
+                    android:text="Tampilkan Lebih Banyak"
+                    android:layout_below="@id/listFasilitas"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp">
+
+                <fragment xmlns:map="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/map"
+                    android:name="com.google.android.gms.maps.SupportMapFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    map:mapType="normal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="20sp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Rating dan Komentar"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <RatingBar
+                    android:id="@+id/rating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="12dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.497"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.448"
+                    android:numStars="5"
+                    android:rating="0"
+                    android:stepSize="1.0"/>
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Hello World!"
+                    android:layout_gravity="center"
+                    app:layout_constraintEnd_toEndOf="@+id/rating"
+                    app:layout_constraintHorizontal_bias="0.503"
+                    app:layout_constraintStart_toStartOf="@+id/rating"
+                    app:layout_constraintTop_toBottomOf="@+id/rating" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:id="@+id/textInputLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:hint="Silahkan Diisi">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/editText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <Button
+                    android:id="@+id/btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Submit"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_gravity="end"
+                    android:layout_marginEnd="12dp"
+                    app:layout_constraintEnd_toEndOf="@+id/rating"
+                    app:layout_constraintStart_toStartOf="@+id/rating"
+                    app:layout_constraintTop_toBottomOf="@+id/rating"
+                    app:layout_constraintVertical_bias="0.145" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Review Pengguna"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="259dp"
+                    tools:listitem="@layout/item_rating"
+                    android:scrollbars="vertical"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <LinearLayout
+        android:id="@+id/linearVideo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="12dp"
+        android:layout_above="@id/linearFavorite"
+        android:background="@drawable/shape_float"
+        android:orientation="vertical">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/fabVideo"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:padding="8dp"
+            android:src="@drawable/baseline_video_library_24" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearFavorite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linearLaporan"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="12dp"
+        android:background="@drawable/shape_float"
+        android:orientation="vertical">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/btnFavorite"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:padding="8dp"
+            app:backgroundTint="#3F51B5"
+            android:src="@drawable/baseline_favorite_border_24" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLaporan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="12dp"
+        android:background="@drawable/shape_float"
+        android:orientation="vertical">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/reportButton"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:padding="8dp"
+            app:backgroundTint="#3F51B5"
+            android:src="@drawable/baseline_report_24" />
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        tools:visibility="visible" />
+
+</RelativeLayout>

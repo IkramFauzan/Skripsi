@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1014940034594",
+    "firebase_url": "https://newskripsi-f57ae-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "newskripsi-f57ae",
+    "storage_bucket": "newskripsi-f57ae.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1014940034594:android:7265e4c73b535fcdc4cc7b",
+        "android_client_info": {
+          "package_name": "com.example.testingfirebaserealtime"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1014940034594-vl2robbkfbke2d5e41441liun9a3gv20.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.testingfirebaserealtime",
+            "certificate_hash": "77aec91259db2d8b002ab81d0f5fe3e8b05319e4"
+          }
+        },
+        {
+          "client_id": "1014940034594-j4lhli1vefrlnisjnooansc7fis3s7t0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAiarJi6KLnSyuhPpgq7uGeeL0-5jYhopI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1014940034594-j4lhli1vefrlnisjnooansc7fis3s7t0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

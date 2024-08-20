@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="18" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/travelitinerary"
+        android:label="Locatour Gowa"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.TestingFirebaseRealtime"
+        tools:targetApi="31">
+        <activity
+            android:name=".activity.CuacaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".detail.DetailArticleActivity"
+            android:exported="false" />
+        <activity
+            android:name=".detail.DetailEventActivity"
+            android:exported="false" />
+        <activity
+            android:name=".eksperimen.MediaPlayerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.manage.ManagePrayer"
+            android:exported="false" />
+        <activity
+            android:name=".admin.manage.ManageWisataAlam"
+            android:exported="false" />
+        <activity
+            android:name=".admin.manage.ManageSejarah"
+            android:exported="false" />
+        <activity
+            android:name=".admin.manage.ManagePenginapan"
+            android:exported="false" />
+        <activity
+            android:name=".admin.manage.ManageWisataBuatan"
+            android:exported="false" />
+        <activity
+            android:name=".admin.manage.ManageKuliner"
+            android:exported="false" />
+        <activity
+            android:name=".admin.manage.ChooseCategory"
+            android:exported="false" />
+        <activity
+            android:name=".category.SejarahActivity"
+            android:exported="false" />
+        <activity
+            android:name=".category.WisataBuatanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".detail.DetailWisataBuatanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".detail.DetailSejarahActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.SelectLocationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.UpdateDataActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.AdminDashboard"
+            android:exported="false" />
+        <activity
+            android:name=".admin.ListAddDestination"
+            android:exported="false" />
+        <activity
+            android:name=".admin.AcceptDeclineDestination"
+            android:exported="false" />
+        <activity
+            android:name=".profile.MapPickerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".profile.AddDestinationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".WebViewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ListFavoriteActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ProfileUlasanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.VisitActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".auth.SignUpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".auth.SignActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.SearchActivity"
+            android:exported="false" />
+        <activity
+            android:name=".detail.DetailAllLocationAcitivity"
+            android:exported="false" />
+        <!--
+             TODO: Before you run your application, you need a Google Maps API key.
+
+             To get one, follow the directions here:
+
+                https://developers.google.com/maps/documentation/android-sdk/get-api-key
+
+             Once you have your API key (it starts with "AIza"), define a new property in your
+             project's local.properties file (e.g. MAPS_API_KEY=Aiza...), and replace the
+             "YOUR_API_KEY" string in this file with "${MAPS_API_KEY}".
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDGyfRLZrFKUR7Wvx-4YTb353Zn2KZ1sg0" />
+
+        <activity
+            android:name=".detail.DetailWisataActivity"
+            android:exported="false" />
+        <activity
+            android:name=".detail.DetailKulinerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.WisataAlamActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.KulinerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".penginapan.activity.HotelActivity"
+            android:exported="false" />
+        <activity
+            android:name=".detail.DetailPrayerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.PrayerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".penginapan.activity.DetailHotelActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

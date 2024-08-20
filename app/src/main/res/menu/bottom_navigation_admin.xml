@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/button_home"
+        android:title="Home"
+        android:icon="@drawable/home_bottom_nav"
+        />
+
+    <item
+        android:id="@+id/button_manage"
+        android:title="Manage"
+        android:icon="@drawable/user"
+        />
+
+    <item
+        android:id="@+id/button_wisata"
+        android:icon="@drawable/route"
+        android:title="Tour"/>
+
+    <item
+        android:id="@+id/button_article"
+        android:icon="@drawable/news"
+        android:title="Article"/>
+
+</menu>
